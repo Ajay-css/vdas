@@ -1,12 +1,9 @@
 import { useState } from "react";
-
-import {
-  Home,
-  Shield,
-  PhoneCall,
-  Image,
-  Phone,
-} from "lucide-react";
+import Home from "../assets/icons/Home.png";
+import Shield from "../assets/icons/shield.png";
+import PhoneCall from "../assets/icons/Contact.svg";
+import Image from "../assets/icons/Album.png";
+import Phone from "../assets/icons/User.png";
 
 const items = [
   {
@@ -20,8 +17,8 @@ const items = [
     icon: Shield,
   },
   {
-    id: "home",
-    label: "Book",
+    id: "call",
+    label: "call",
     icon: PhoneCall,
     center: true,
   },
@@ -40,17 +37,19 @@ const items = [
 export default function BottomNavbar() {
   const [active, setActive] = useState("home");
 
-  const scrollToSection = (id) => {
-    setActive(id);
+  const handleClick = (item) => {
+    if (item.center) {
+      window.location.href = "tel:+917904970463";
+      return;
+    }
 
-    document
-      .getElementById(id)
-      ?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+    setActive(item.id);
+
+    document.getElementById(item.id)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
   };
-
   return (
     <div
       className="
@@ -81,7 +80,7 @@ export default function BottomNavbar() {
         return (
           <button
             key={item.id}
-            onClick={() => scrollToSection(item.id)}
+            onClick={() => handleClick(item)}
             className="flex flex-col items-center"
           >
             <div
@@ -93,31 +92,32 @@ export default function BottomNavbar() {
               justify-center
               rounded-full
               mb-2
-              ${
-                item.center
+              ${item.center
                   ? `
                   h-14
-                  w-14
-                  -translate-y-2
-                  bg-gradient-to-r
-                  from-emerald-500
-                  to-green-400
-                  text-white
-                  shadow-[0_15px_35px_rgba(16,185,129,.35)]
+w-14
+-translate-y-2
+bg-[linear-gradient(135deg,#15803d_0%,#16a34a_28%,#22c55e_55%,#4ade80_78%,#22c55e_100%)]
+border-2
+border-emerald-300
+text-white
+shadow-[0_18px_35px_rgba(16,185,129,.30)]
                 `
                   : `
                   h-11
                   w-11
-                  ${
-                    isActive
-                      ? "bg-emerald-100 text-emerald-600"
-                      : "text-slate-500"
+                  ${isActive
+                    ? "bg-emerald-100 text-emerald-600"
+                    : "text-slate-500"
                   }
                 `
-              }
+                }
             `}
             >
-              <Icon
+              <img
+                src={item.icon}
+                alt={item.label}
+                className="h-6 w-6"
                 size={22}
               />
             </div>

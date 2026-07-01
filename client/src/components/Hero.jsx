@@ -88,7 +88,22 @@ to-lime-400 bg-clip-text text-transparent">
 
             <a
               href="tel:+917904970463"
-              className="rounded-3xl bg-gradient-to-r from-emerald-500 to-green-400 px-7 py-4 font-semibold text-white shadow-[0_15px_40px_rgba(16,185,129,.35)] transition-all duration-300 before:absolute
+              className="
+rounded-3xl
+
+border border-emerald-300/70
+bg-[radial-gradient(circle_at_top,#86efac_0%,rgba(255,255,255,.18)_18%,transparent_40%),linear-gradient(135deg,#15803d_0%,#22c55e_35%,#4ade80_60%,#16a34a_100%)]
+px-6
+py-4
+font-semibold
+text-white
+
+shadow-[0_15px_40px_rgba(16,185,129,.35)]
+
+transition-all
+duration-300
+
+before:absolute
 before:inset-0
 before:-translate-x-full
 hover:before:translate-x-full
@@ -98,8 +113,10 @@ before:bg-gradient-to-r
 before:from-transparent
 before:via-white/30
 before:to-transparent
+
 overflow-hidden
-relative"
+relative
+"
             >
               Call Now
             </a>

@@ -1,5 +1,5 @@
 import { PhoneCall } from "lucide-react";
-import logo from "../assets/logo/logo.png";
+import logo from "../assets/logo/logo2.png";
 
 const navItems = [
   { name: "Home", id: "home" },
@@ -10,12 +10,10 @@ const navItems = [
 
 export default function Navbar() {
   const scrollToSection = (id) => {
-    document
-      .getElementById(id)
-      ?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
   };
 
   return (
@@ -32,7 +30,7 @@ export default function Navbar() {
           shadow-[0_15px_45px_rgba(15,23,42,.08)]
         "
       >
-        <div className="flex h-16 items-center justify-between px-7">
+        <div className="flex h-16 items-center justify-between px-5 lg:px-7">
 
           {/* Logo */}
           <button
@@ -42,7 +40,7 @@ export default function Navbar() {
             <img
               src={logo}
               alt="V-DAS"
-              className="h-11 w-auto object-contain"
+              className="h-12 lg:h-11 w-auto object-contain"
             />
           </button>
 
@@ -74,35 +72,142 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* CTA */}
+          {/* Desktop CTA */}
           <a
             href="tel:+917904970463"
             className="
-              hidden
-              lg:flex
-              items-center
-              gap-2
-              rounded-full
-              bg-gradient-to-r
-              from-emerald-500
-              to-green-400
-              px-6
-              py-3
-              font-bold
-              text-white
-              shadow-[0_12px_30px_rgba(16,185,129,.28)]
-              transition-all
-              duration-300
-              hover:-translate-y-0.5
-              hover:scale-105
-            "
+    group
+    relative
+    hidden
+    lg:flex
+    items-center
+    gap-3
+    overflow-hidden
+    rounded-full
+    px-4
+    py-1
+    font-semibold
+    text-white
+
+    bg-gradient-to-r
+    from-emerald-600
+    via-emerald-500
+    to-green-400
+
+    border-2
+    border-emerald-300/80
+
+    shadow-[0_18px_40px_rgba(16,185,129,.30)]
+    transition-all
+    duration-500
+  "
           >
-            <PhoneCall size={18} />
-            Call Now
+            {/* Top Gloss */}
+            <div
+              className="
+      absolute
+      left-2
+      right-2
+      top-[2px]
+      h-[42%]
+      rounded-full
+      bg-gradient-to-b
+      from-white/45
+      via-white/18
+      to-transparent
+      pointer-events-none
+    "
+            />
+
+            {/* Emerald Glow */}
+            <div
+              className="
+      absolute
+      inset-0
+      rounded-full
+      bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,.35),transparent_45%)]
+      opacity-90
+      pointer-events-none
+    "
+            />
+
+            {/* Shine Animation */}
+            <span
+              className="
+      absolute
+      -left-24
+      top-0
+      h-full
+      w-16
+      rotate-12
+      bg-white/30
+      blur-md
+      transition-all
+      duration-1000
+      group-hover:left-[130%]
+    "
+            />
+
+            {/* Icon */}
+            <div
+              className="
+      relative
+      z-10
+      flex
+      h-9
+      w-9
+      items-center
+      justify-center
+      rounded-full
+      backdrop-blur-xl
+    "
+            >
+              <PhoneCall
+                size={18}
+                className="text-white"
+              />
+            </div>
+
+            {/* Text */}
+            <span className="relative z-10 tracking-[0.2px]">
+              Call Now
+            </span>
           </a>
 
-          {/* Mobile */}
-          <div className="h-12 w-12 lg:hidden" />
+          {/* Mobile Status */}
+          <div className="flex items-center lg:hidden">
+            <div
+              className="
+                flex
+                items-center
+                gap-2
+                rounded-full
+                border
+                border-emerald-100
+                bg-white/80
+                px-3
+                py-2
+                backdrop-blur-xl
+                shadow-[0_8px_20px_rgba(16,185,129,.08)]
+              "
+            >
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-70"></span>
+                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
+              </span>
+
+              <div className="leading-none">
+                <p className="text-[11px] font-semibold text-slate-800">
+                  Available Now
+                </p>
+
+                <p className="mt-0.5 text-[10px] text-slate-500">
+                  24×7 Service
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </nav>
     </header>
