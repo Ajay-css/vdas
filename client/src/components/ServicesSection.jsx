@@ -26,10 +26,6 @@ const services = [
     image: termite,
   },
   {
-    title: "Rat (Rodent) Control",
-    image: rat,
-  },
-  {
     title: "Mosquito Control",
     image: mosquito,
   },
@@ -42,28 +38,8 @@ const services = [
     image: lizard,
   },
   {
-    title: "Snake Control",
-    image: snake,
-  },
-  {
-    title: "Bird Proofing",
-    image: bird,
-  },
-  {
-    title: "Fumigation",
-    image: fumigation,
-  },
-  {
-    title: "Disinfection Spraying",
-    image: disinfection,
-  },
-  {
     title: "Flies Control",
     image: flies,
-  },
-  {
-    title: "Crawling Insects",
-    image: crawling,
   },
 ];
 

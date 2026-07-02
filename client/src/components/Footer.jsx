@@ -19,7 +19,7 @@ const services = [
   "Cockroach Control",
   "Termite Control",
   "Mosquito Control",
-  "Rodent Control",
+  "Flies Control",
   "Bed Bug Treatment",
 ];
 
@@ -242,7 +242,7 @@ export default function Footer() {
 
                 <div>
 
-                  <p className="font-semibold text-slate-900">
+                  <p className="font-semibold text-[14px] text-slate-900">
                     +91 79049 70463
                   </p>
 
@@ -263,8 +263,8 @@ export default function Footer() {
 
                 <div>
 
-                  <p className="font-semibold text-slate-900 break-all">
-                    info@vdaspestcontrol.com
+                  <p className="font-semibold text-[14px] text-slate-900 break-all">
+                    krishnan.venki53@gmail.com
                   </p>
 
                   <p className="text-sm text-slate-500">
@@ -284,7 +284,7 @@ export default function Footer() {
 
                 <div>
 
-                  <p className="font-semibold text-slate-900">
+                  <p className="font-semibold text-[14px] text-slate-900">
                     Madurai,
                     Tamil Nadu
                   </p>
@@ -305,7 +305,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
 
-        <div className="border-t border-emerald-200">
+        <div className="hidden lg:block border-t border-emerald-200">
 
           <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-6 text-center md:flex-row">
 
