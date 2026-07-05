@@ -1,5 +1,5 @@
 import { PhoneCall } from "lucide-react";
-import logo from "../assets/logo/logo.png";
+import logo from "../assets/logo/logoss.png";
 
 const navItems = [
   { name: "Home", id: "home" },
@@ -33,15 +33,36 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between px-5 lg:px-7">
 
           {/* Logo */}
+          {/* Logo */}
           <button
             onClick={() => scrollToSection("home")}
-            className="flex items-center"
+            className="flex items-center gap-1"
           >
             <img
               src={logo}
               alt="V-DAS"
-              className="h-12 lg:h-11 w-auto object-contain"
+              className="h-12 lg:h-14 w-auto object-contain"
             />
+
+            {/* Brand Tag */}
+            <div className="sm:flex items-center mt-6 gap-2">
+              <span className="h-px w-5 bg-gradient-to-r from-transparent to-slate-400" />
+
+              <span
+                className="
+        text-[11px]
+        lg:text-xs
+        font-bold
+        uppercase
+        text-[#203A63]
+        whitespace-nowrap
+      "
+              >
+                Pest Control
+              </span>
+
+              <span className="h-px w-5 bg-gradient-to-l from-transparent to-slate-400" />
+            </div>
           </button>
 
           {/* Desktop Menu */}
