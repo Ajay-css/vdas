@@ -275,7 +275,7 @@ export default function Footer() {
 
               </div>
 
-              <div className="flex items-start gap-3">
+              <div className="flex items-start gap-3 mb-8">
 
                 <MapPin
                   size={20}

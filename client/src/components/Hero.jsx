@@ -125,8 +125,9 @@ relative
             <a
               href="https://wa.me/917904970463"
               target="_blank"
-              className="rounded-3xl border border-white/70 bg-white/80 px-6 py-3.5 font-medium text-slate-700 shadow-xl backdrop-blur-xl transition-all duration-300 before:absolute
-before:inset-0
+              className="rounded-3xl border border-white/7 px-6 py-3.5 font-medium text-slate-700 shadow-xl backdrop-blur-xl transition-all duration-300 before:absolute
+bg-[radial-gradient(circle_at_top,#86efac_0%,rgba(255,255,255,.18)_18%,transparent_40%),linear-gradient(135deg,#15803d_0%,#22c55e_35%,#4ade80_60%,#16a34a_100%)]
+              before:inset-0
 before:-translate-x-full
 hover:before:translate-x-full
 before:transition-transform
@@ -138,8 +139,8 @@ before:to-transparent
 overflow-hidden
 relative"
             >
-              <FaWhatsapp size={20} className="inline-block mr-2 text-green-500" />
-              <span>WhatsApp Us</span>
+              <FaWhatsapp size={20} className="inline-block mr-2 text-white" />
+              <span className="text-white">WhatsApp Us</span>
             </a>
 
           </div>
@@ -174,16 +175,17 @@ relative"
 
           {/* Ring Placeholder */}
 
-          <div
-            className="
-        absolute
-        h-[360px]
-        w-[360px]
-        rounded-full
-        border
-        border-emerald-300/40
-        "
-          />
+          <motion.div
+            animate={{ rotate: 360 }}
+            transition={{
+              duration: 25,
+              repeat: Infinity,
+              ease: "linear",
+            }}
+            className="absolute h-[400px] w-[400px] rounded-full border border-emerald-300/40"
+          >
+            <div className="absolute left-1/2 -top-1 h-2 w-2 -translate-x-1/2 rounded-full bg-emerald-400 shadow-[0_0_18px_rgba(16,185,129,.9)]" />
+          </motion.div>
 
           <div className="absolute inset-0 flex items-center justify-center overflow-hidden rounded-full">
 
