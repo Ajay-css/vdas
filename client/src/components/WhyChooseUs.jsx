@@ -6,7 +6,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 
-import houseShield from "../assets/ilustrations/house-shield.png";
+import heroShield from "../assets/ilustrations/hero-shield.png";
 
 const stats = [
   {
@@ -87,7 +87,7 @@ export default function WhyChooseUs() {
             </div>
 
             <img
-              src={houseShield}
+              src={heroShield}
               alt="House Protection"
               className="relative z-20 w-full max-w-[480px]"
             />

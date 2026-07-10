@@ -12,14 +12,15 @@ const reviews = [
     large: true,
     name: "Ramesh Kumar",
     location: "Madurai",
-    review:
-      "Excellent pest control service. Professional technicians, quick response and safe treatment. Highly recommended for residential and commercial properties.",
+    review: `I recently hired this pest control company for a complete inspection and treatment of my home, and I can confidently say it was one of the best service experiences I have had in recent years. From the moment I contacted their customer support team, they were polite, professional, and extremely responsive. They patiently explained the entire process, answered every question I had, and scheduled the appointment at a time that was convenient for my family.
+
+The technicians arrived exactly on time, wearing proper uniforms and carrying all the necessary equipment. I will definitely continue using their annual maintenance services and recommend them to my friends, family members, and colleagues without any hesitation.`
   },
   {
     id: 2,
     large: false,
     name: "Priya",
-    location: "Theni",
+    location: "Madurai",
     review:
       "Very friendly staff and affordable pricing.",
   },
@@ -27,7 +28,7 @@ const reviews = [
     id: 3,
     large: false,
     name: "Arun",
-    location: "Dindigul",
+    location: "Madurai",
     review:
       "Professional service with effective treatment.",
   },
@@ -35,7 +36,7 @@ const reviews = [
     id: 4,
     large: false,
     name: "Meena",
-    location: "Sivagangai",
+    location: "Madurai",
     review:
       "Very happy with the overall service quality.",
   },

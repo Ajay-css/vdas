@@ -147,7 +147,7 @@ export default function ServicesSection() {
 
         {/* Button */}
 
-        <div className="mt-16 flex justify-center">
+        {/* <div className="mt-16 flex justify-center">
 
           <button
             className="
@@ -183,7 +183,7 @@ export default function ServicesSection() {
 
           </button>
 
-        </div>
+        </div> */}
 
       </div>
     </section>

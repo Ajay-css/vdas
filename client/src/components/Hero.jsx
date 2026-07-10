@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { PhoneCall, ShieldCheck, BadgeCheck } from "lucide-react";
-import heroShield from "../assets/ilustrations/hero-shield.png";
+import { ShieldCheck, BadgeCheck } from "lucide-react";
+import houseShield from "../assets/ilustrations/house-shield.png";
+import PhoneCall from "../assets/icons/Contact.svg";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function Hero() {
@@ -66,20 +67,20 @@ to-lime-400 bg-clip-text text-transparent">
           </p>
 
           {/* Features */}
-          <div className="mt-7 flex flex-wrap gap-5 text-sm font-medium text-slate-700">
+          <div className="mt-7 flex flex-col md:flex-row gap-4 md:gap-5 text-sm font-medium text-slate-700 items-start md:items-center">
             <div className="flex items-center gap-2">
               <ShieldCheck size={18} className="text-emerald-500" />
-              Same Day Service
+              <span>Same Day Service</span>
             </div>
 
             <div className="flex items-center gap-2">
               <ShieldCheck size={18} className="text-emerald-500" />
-              Family Safe
+              <span>Family Safe</span>
             </div>
 
             <div className="flex items-center gap-2">
               <ShieldCheck size={18} className="text-emerald-500" />
-              100% Satisfaction
+              <span>100% Satisfaction</span>
             </div>
           </div>
 
@@ -113,11 +114,11 @@ before:bg-gradient-to-r
 before:from-transparent
 before:via-white/30
 before:to-transparent
-
 overflow-hidden
 relative
 "
             >
+              <span><img src={PhoneCall} alt="call" className="inline-block mr-2 w-5" /></span>
               Call Now
             </a>
 
@@ -135,9 +136,7 @@ before:from-transparent
 before:via-white/30
 before:to-transparent
 overflow-hidden
-relative
-hover:bg-black
-hover:text-white"
+relative"
             >
               <FaWhatsapp size={20} className="inline-block mr-2 text-green-500" />
               <span>WhatsApp Us</span>
@@ -225,7 +224,7 @@ hover:text-white"
               duration: 0.9,
               ease: "easeOut",
             }}
-            src={heroShield}
+            src={houseShield}
             alt="Shield"
             className="
     relative
