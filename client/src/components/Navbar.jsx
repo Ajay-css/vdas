@@ -1,5 +1,5 @@
 import { PhoneCall } from "lucide-react";
-import logo from "../assets/logo/logoss.png";
+import logo from "../assets/logo/logo.png";
 
 const navItems = [
   { name: "Home", id: "home" },
