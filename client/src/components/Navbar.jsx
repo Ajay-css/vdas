@@ -193,7 +193,7 @@ export default function Navbar() {
           </a>
 
           {/* Mobile Status */}
-          <div className="flex items-center lg:hidden">
+          {/* <div className="flex items-center lg:hidden">
             <div
               className="
                 flex
@@ -224,7 +224,7 @@ export default function Navbar() {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </nav>
