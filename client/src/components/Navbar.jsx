@@ -41,27 +41,24 @@ export default function Navbar() {
             <img
               src={logo}
               alt="V-DAS"
-              className="h-12 lg:h-14 w-auto object-contain"
+              className="h-14 lg:h-14 w-auto object-contain"
             />
 
             {/* Brand Tag */}
             <div className="sm:flex items-center gap-2">
-              <span className="h-px w-5 bg-gradient-to-r from-transparent to-slate-400" />
-
               <span
                 className="
-        text-[11px]
-        lg:text-xs
-        font-bold
-        uppercase
-        text-[#203A63]
-        whitespace-nowrap
-      "
+                ml-3
+                text-[16px]
+                lg:text-xs
+                font-bold
+                uppercase
+                text-[#203A63]
+                whitespace-nowrap
+              "
               >
                 Pest Control
               </span>
-
-              <span className="h-px w-5 bg-gradient-to-l from-transparent to-slate-400" />
             </div>
           </button>
 
