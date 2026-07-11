@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ShieldCheck, BadgeCheck } from "lucide-react";
-import houseShield from "../assets/ilustrations/house-shield.png";
+import houseShield from "../assets/ilustrations/house-shield.webp";
 import PhoneCall from "../assets/icons/Contact.svg";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -118,7 +118,7 @@ overflow-hidden
 relative
 "
             >
-              <span><img src={PhoneCall} alt="call" className="inline-block mr-2 w-5" /></span>
+              <span><img src={PhoneCall} alt="" aria-hidden="true" width="20" height="20" className="inline-block mr-2 w-5" /></span>
               Call Now
             </a>
 
@@ -227,7 +227,11 @@ relative"
               ease: "easeOut",
             }}
             src={houseShield}
-            alt="Shield"
+            alt="V-DAS pest control home protection illustration"
+            width="470"
+            height="400"
+            fetchPriority="high"
+            decoding="async"
             className="
     relative
     z-20

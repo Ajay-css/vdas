@@ -12,8 +12,8 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 
-import logo from "../assets/logo/logo.png";
-import ctaBg from "../assets/backgrounds/emrald-bg.png";
+import logo from "../assets/logo/logo.webp";
+import ctaBg from "../assets/backgrounds/emrald-bg.webp";
 
 const services = [
   "Cockroach Control",
@@ -122,7 +122,11 @@ export default function Footer() {
 
             <img
               src={logo}
-              alt="V-DAS"
+              alt="V-DAS Pest Control logo"
+              width="84"
+              height="56"
+              loading="lazy"
+              decoding="async"
               className="h-14"
             />
 

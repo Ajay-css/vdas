@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Home from "../assets/icons/Home.png";
-import Shield from "../assets/icons/shield.png";
+import Home from "../assets/icons/Home.webp";
+import Shield from "../assets/icons/shield.webp";
 import PhoneCall from "../assets/icons/Contact.svg";
-import Image from "../assets/icons/Album.png";
-import Phone from "../assets/icons/User.png";
+import Image from "../assets/icons/Album.webp";
+import Phone from "../assets/icons/User.webp";
 
 const items = [
   {
@@ -39,7 +39,7 @@ export default function BottomNavbar() {
 
   const handleClick = (item) => {
     if (item.center) {
-      window.location.href = "tel:+917904970463";
+      window.location.assign("tel:+917904970463");
       return;
     }
 
@@ -73,8 +73,6 @@ export default function BottomNavbar() {
     "
     >
       {items.map((item) => {
-        const Icon = item.icon;
-
         const isActive = active === item.id;
 
         return (
@@ -117,8 +115,11 @@ shadow-[0_18px_35px_rgba(16,185,129,.30)]
               <img
                 src={item.icon}
                 alt={item.label}
+                width="24"
+                height="24"
+                loading="lazy"
+                decoding="async"
                 className="h-6 w-6"
-                size={22}
               />
             </div>
 

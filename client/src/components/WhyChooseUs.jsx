@@ -2,11 +2,10 @@ import { motion } from "framer-motion";
 import {
   Smile,
   CalendarClock,
-  Users,
   ShieldCheck,
 } from "lucide-react";
 
-import heroShield from "../assets/ilustrations/hero-shield.png";
+import heroShield from "../assets/ilustrations/hero-shield.webp";
 
 const stats = [
   {
@@ -88,7 +87,11 @@ export default function WhyChooseUs() {
 
             <img
               src={heroShield}
-              alt="House Protection"
+              alt="Certified V-DAS pest control experts protecting a house"
+              width="480"
+              height="384"
+              loading="lazy"
+              decoding="async"
               className="relative z-20 w-full max-w-[480px]"
             />
           </motion.div>
