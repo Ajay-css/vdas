@@ -1,5 +1,5 @@
 import { PhoneCall } from "lucide-react";
-import logo from "../assets/logo/logo.png";
+import logo from "../assets/logo/logo.webp";
 
 const navItems = [
   { name: "Home", id: "home" },
@@ -40,7 +40,11 @@ export default function Navbar() {
           >
             <img
               src={logo}
-              alt="V-DAS"
+              alt="V-DAS Pest Control logo"
+              width="84"
+              height="56"
+              fetchPriority="high"
+              decoding="async"
               className="h-14 lg:h-14 w-auto object-contain"
             />
 

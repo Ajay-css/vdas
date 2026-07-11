@@ -1,20 +1,11 @@
-import {
-  ArrowRight,
-  ChevronRight,
-} from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
-import cockroach from "../assets/services/cockroach.png";
-import termite from "../assets/services/termite.png";
-import rat from "../assets/services/rat.png";
-import mosquito from "../assets/services/mosquito.png";
-import bedbug from "../assets/services/bedbug.png";
-import lizard from "../assets/services/lizard.png";
-import snake from "../assets/services/snake.png";
-import bird from "../assets/services/bird.png";
-import fumigation from "../assets/services/fumigation.png";
-import disinfection from "../assets/services/disinfection.png";
-import flies from "../assets/services/flies.png";
-import crawling from "../assets/services/crawling.png";
+import cockroach from "../assets/services/cockroach.webp";
+import termite from "../assets/services/termite.webp";
+import mosquito from "../assets/services/mosquito.webp";
+import bedbug from "../assets/services/bedbug.webp";
+import lizard from "../assets/services/lizard.webp";
+import flies from "../assets/services/flies.webp";
 
 const services = [
   {
@@ -113,7 +104,11 @@ export default function ServicesSection() {
 
                     <img
                       src={service.image}
-                      alt={service.title}
+                      alt={`${service.title} service in Madurai`}
+                      width="36"
+                      height="36"
+                      loading="lazy"
+                      decoding="async"
                       className="h-9 w-9 object-contain transition duration-300 group-hover:scale-110"
                     />
 
