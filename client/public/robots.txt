@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vdaspestcontrol.in/sitemap.xml
+Sitemap: https://www.vdaspestcontrol.site/sitemap.xml
