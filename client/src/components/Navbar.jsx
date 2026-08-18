@@ -49,7 +49,7 @@ export default function Navbar() {
             />
 
             {/* Brand Tag */}
-            <div className="sm:flex items-center gap-2">
+            {/* <div className="sm:flex items-center gap-2">
               <span
                 className="
       ml-3
@@ -63,7 +63,7 @@ export default function Navbar() {
               >
                 Pest Control
               </span>
-            </div>
+            </div> */}
           </button>
 
           {/* Mobile Phone */}
@@ -92,7 +92,7 @@ export default function Navbar() {
               size={15}
               className="text-emerald-600"
             />
-            <span>79049 70463</span>
+            <span>+91 79049 70463</span>
           </a>
 
           {/* Desktop Menu */}
