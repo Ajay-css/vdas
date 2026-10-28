@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Features from "../components/Features";
 import Services from "../components/ServicesSection";
+import BrandCard from "../components/BrandCard";
 import RecentWorks from "../components/RecentWorks";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Testimonials from "../components/Testimonials";
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <Features />
         <Services />
+        <BrandCard />
         <RecentWorks />
         <WhyChooseUs />
         <Testimonials />
